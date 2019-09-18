@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Team Jupiter">
     <meta name="description" content="">
@@ -11,11 +11,64 @@
     <!--style sheet-->
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
     <!--Javascript-->
-    <link type="text/javascript" href="assets/script.js" />
+    
     <title>Login</title>
 </head>
 
-<body>
+<body  background="assets/books3.jpg" >
+    <div id = "container">
+		<main id="main">
+			<div id="loginulcontainer">
+			<div id="login-tab" class="active">LOGIN</div><div id="register-tab">REGISTER</div>
+				<div id="logincontainer">
+					<div class="form-group">
+						<input type="text" class="form-control inputbox" placeholder="Username" id="login-username">
+					</div>
+					
+					<div class="form-group">
+						<input type="password" class="form-control inputbox" placeholder="Password" id="login-password">
+					</div>
+					
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary" value="LOGIN">
+					</div>
+					<div class="textcenter signuptxt">Don't have an account?<a href="#" class="link registerlink">Sign up</a></div>
+					<p class="textcenter forgettxt"><a href="#" class="textcenter link forgetlink">Forget password?</a></p>
+				</div>
+				<div id="registercontainer" hidden >
+					<div class="form-group">
+						<input type="text" class="form-control inputbox" placeholder="Full name" id="register-fullname">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control inputbox" placeholder="Username" id="register-username">
+					</div>
+					
+					<div class="form-group">
+						<input type="text" class="form-control inputbox" placeholder="Email" id="register-email">
+					</div>
+					
+					<div class="form-group">
+						<input type="password" class="form-control inputbox" placeholder="Password" id="register-password">
+					</div>
+					
+					<div class="form-group">
+						<input type="password" class="form-control inputbox" placeholder="Confirm Password" id="register-confirmpassword">
+					</div>
+					
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary" value="REGISTER">
+					</div>
+					
+					<div class="textcenter signuptxt">Already have an account?<a href="#" class="link loginlink">login</a></div>
+				</div>
+				
+			</div>
+
+		</main>
+		
+	</div>
+    
+    <script src="assets/main.js"></script>
 
 </body>
 
